@@ -1,0 +1,555 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-image: radial-gradient( #ebc4011b, #ff82e83a);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;  /* ✅ ye add karein */
+    top: 0;            /* ✅ page ke top pe chipak jaayegi */
+    z-index: 1000;     /* ✅ taake dusre elements ke neeche na chali jaye */
+}
+
+.navbar {
+    padding: 40px 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-nav, .right-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-nav img, .right-nav img {
+    width: 522px;
+    height: 75px;
+    max-width: 100%;
+    max-height: 100%;
+    backdrop-filter: blur(10px);
+}
+
+.left-nav ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.left-nav-items-div ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 70px;
+    width: 400px;
+}
+
+.left-nav-items-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.special-icon {
+    background-image: linear-gradient(45deg, #ebc501, #ff82e9);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.nav-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.back-logo {
+    margin-top: 10px;
+}
+
+.nav-img .top-logo {
+    position: absolute;
+    top: 5px;
+}
+
+.cart {
+    background-color: #ebc501;
+    padding: 5px 20px;
+    border-radius: 30px;
+    position: absolute;
+    right: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart p {
+    margin-left: 5px;
+    color: #ffffff;
+}
+
+
+/**************************** hero - banner ********************/
+
+.hero-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 50px;
+    height: 80vh;
+    margin-top: 250px;
+}
+
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.banner-text h1 {
+    font-family: 'Georgia';
+    font-size: 52px;
+    font-weight: 500;
+}
+
+.banner-text h1 span{
+    background-image: linear-gradient(45deg, #ebc501, #ff82e9);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.banner-text p {
+    font-family: 'Inter';
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    margin: 30px 0px;
+}
+
+.banner-text ul li {
+    list-style: none;
+}
+
+.banner-text ul li a {
+    text-decoration: none;
+    font-family: "Inter";
+    font-weight: 700;
+    color: #ffffff;
+    padding: 15px 80px;
+    background-color: #ff82e8b3;
+    border-radius: 30px;
+}
+
+.banner-img img {
+    width: 900px;
+    max-width: 100%;
+}
+
+
+/**************************** New - arrivals ********************/
+
+.new-arrivals-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 100%;
+}
+
+.new-arrivals {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+}
+
+.new-arrivals-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.new-arrivals-text h1 {
+    font-size: 48px;
+    font-family: 'Georgia';
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.new-arrivals-text h1 span {
+    background-image: linear-gradient( #ff82e9);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  font-weight: 600;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.under-line {
+    width: 110px;
+    max-width: 100%;
+    height: 4px;
+    max-height: 100%;
+    background-image: linear-gradient(45deg, #ebc501, #ff82e9);
+    border-radius: 20px;
+}
+
+.new-arrivals-text p {
+    font-size: 14px;
+    font-family: 'Inter';
+    color: oklab(0 0 0 / 0.65);
+}
+
+.new-arrivals-products {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.product-1 {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 30px;
+    margin-left: 30px;
+    width: 350;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.product-1 img {
+    width: 300px;
+    max-width: 100%;
+}
+
+/**************************** New - arrivals - products - section ********************/
+
+.product-section {
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: linear-gradient(45deg , #ebc4016b, #ebc4016b, #ff82e811, #ff82e83a, #ff82e83a);
+}
+
+.product-items {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    max-height: 700px;
+    gap: 10px;
+}
+
+.product-branch-1 {
+    padding: 20px;
+    height: 325px;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: linear-gradient(#ff82e82d) transparent;
+    max-width: 390px;
+    width: 100%;
+}
+
+.product-branch-special {
+    height: 660px;
+    max-height: 100%;
+}
+
+.product-branch-1 h1 {
+    font-family: 'General Sans Bold', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.product-branch-1 img {
+    width: 100%;
+    max-width: 350px;
+}
+
+.jadooo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/****************************************** shop - now - section ************************************************/
+
+.shop-now {
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(45deg , #ebc4016b, #ebc4016b, #ff82e827, #ff82e83a, #ff82e83a);
+}
+
+.shop-now .text h1{
+    font-size: 48px;
+    font-family: 'Georgia';
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.shop-now .text h1 span {
+    background-image: linear-gradient( #ff82e9);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  font-weight: 600;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.shop-now .text p {
+    font-family: 'Inter';
+    font-size: 14px;
+    color:#000000a6;
+    margin-top: 20px;
+}
+
+.catagories {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.catagories-1 a {
+    padding: 8px 20px;
+    background-color: #ff82e83a;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #6c6c6c;
+    font-family: 'Inter';
+    font-size: 14px;
+}
+
+.shop-now-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 30px;
+}
+
+.prod {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+
+.prod img {
+    width: 100%;
+    max-width: 250px;
+}
+
+.prod p {
+    font-family: 'Georgia';
+    font-size: 14px;
+}
+
+.catagories-1-special {
+    background: linear-gradient(45deg, #ebc501, #ff82e9);
+}
+
+.shop-now-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.shop-now-button li {
+    list-style: none;
+}
+
+.shop-now-button li a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 50px;
+    font-family: 'Inter';
+    background-color: #ff82e9;
+    border-radius: 20px;
+}
+
+/************************************* about - section  ********************************/
+
+.about-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #ff82e83a;
+    padding: 30px;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.about-pic {
+    display: flex;
+    width: 570px;
+    max-width: 100%;
+    height: 570px;
+    max-height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #ff82e83a;
+    border-radius: 30px;
+}
+
+.about-pic img {
+    width: 100%;
+    max-width: 550px;
+    border-radius: 30px;
+    margin-top: 130px;
+    display: flex;
+}
+
+.about-pic-contant {
+    padding: 32px 80px;
+    background: linear-gradient(45deg, #ebc501, #ff82e9);
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-top-left-radius: 15px;
+    margin-top: -50px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about-pic-contant p {
+    font-size: 20px;
+    font-family: 'Gergia';
+    color: #ffffff;
+}
+
+.about-pic-contant >:nth-child(2){
+    font-size: 16px;
+}
+
+.about-contant {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 570px;
+}
+
+.about-contant-1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.about-contant-1 h1 {
+    font-family: "Georgia";
+    font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.about-contant-1 p {
+    font-size: 18px;
+    font-family: "Inter";
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+.about-contant-2 {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.about-contant-2 .text {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-family: 'Inter';
+    color: #ff82e9;
+    font-weight: 600;
+}
+
+.social-media-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border: 2px solid #ebc501;
+    padding: 20px 30px;
+    border-radius: 50px;
+}
+
+.social-media {
+    padding: 10px;
+    background-color: #ff82e83a;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.25px solid #ebc501;
+}
+
+.social-background svg {
+    width: 24px;
+    height: 24px;
+}
